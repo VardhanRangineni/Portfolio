@@ -16,7 +16,7 @@ function App() {
         />
       </div>
       <CardNav
-        logo="/logo192.png"
+        logo={<img src={process.env.PUBLIC_URL + "/Images/ChatGPT_Image_Jul_23__2025__05_05_17_PM-removebg-preview (1).png"} />}
         logoAlt="My Portfolio Logo"
         items={[
           {
@@ -52,18 +52,18 @@ function App() {
             <div className="col-md-6 d-flex justify-content-center mb-4 mb-md-0">
               <div className="position-relative">
                 <img
-                  src="WhatsApp Image 2025-07-23 at 5.46.57 PM.jpeg" 
-                  alt="Vardhan Rangineni"
-                  className="img-fluid"
-                  style={{
-                    width: '300px',
-                    height: '300px',
-                    objectFit: 'cover',
-                    borderRadius: '20px',
-                    border: '3px solid rgba(255, 255, 255, 0.3)',
-                    boxShadow: '0 8px 32px rgba(0, 0, 0, 0.3)'
-                  }}
-                />
+                          src={process.env.PUBLIC_URL + "/Images/WhatsApp Image 2025-07-23 at 5.46.57 PM.jpeg"}
+                          alt="Vardhan Rangineni"
+                          className="img-fluid"
+                          style={{
+                            width: '300px',
+                            height: '300px',
+                            objectFit: 'cover',
+                            borderRadius: '20px',
+                            border: '3px solid rgba(255, 255, 255, 0.3)',
+                            boxShadow: '0 8px 32px rgba(0, 0, 0, 0.3)'
+                          }}
+                        />
               </div>
             </div>
             
