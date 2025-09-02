@@ -95,27 +95,33 @@ function App() {
       </div>
 
       {/* Custom Navigation Bar */}
-        <nav 
-          className="navbar navbar-expand-lg position-fixed w-100"
-          style={{
-            zIndex: 1000,
-            backgroundColor: 'rgba(255, 255, 255, 0.1)',
-            backdropFilter: 'blur(15px)',
-            border: '1px solid rgba(255, 255, 255, 0.2)',
-            boxShadow: '0 8px 32px rgba(0, 0, 0, 0.1)',
-            padding: '15px 0'
-          }}
-        >
-          <div className="container">
-            {/* Logo/Brand */}
-            <a className="navbar-brand d-flex align-items-center text-white" href="#" style={{ fontWeight: 'bold', fontSize: '1.5rem' }}>
+      <nav 
+        className="navbar navbar-expand-lg position-fixed"
+        style={{
+          zIndex: 1000,
+          top: '20px',
+          left: '50%',
+          transform: 'translateX(-50%)',
+          width: '90%',
+          maxWidth: '1200px',
+          backgroundColor: 'rgba(255, 255, 255, 0.1)',
+          backdropFilter: 'blur(15px)',
+          border: '1px solid rgba(255, 255, 255, 0.2)',
+          borderRadius: '50px',
+          boxShadow: '0 8px 32px rgba(0, 0, 0, 0.1)',
+          padding: '10px 20px'
+        }}
+      >
+        <div className="container-fluid">
+          {/* Logo/Brand */}
+            <button className="navbar-brand d-flex align-items-center text-white border-0 bg-transparent" style={{ fontWeight: 'bold', fontSize: '1.5rem' }}>
           <img
             src={process.env.PUBLIC_URL + "/Images/ChatGPT_Image_Jul_23__2025__05_05_17_PM-removebg-preview (1).png"}
             alt="Vardhan Rangineni"
             style={{ height: '40px', marginRight: '10px' }}
           />
           <span className="text-warning">Vardhan</span>
-            </a>
+            </button>
 
             {/* Mobile Toggle Button */}
             <button
@@ -290,254 +296,254 @@ function App() {
         {/* Main Content */}
       <div className="position-relative" style={{ zIndex: 1, paddingTop: '80px' }}>
         {/* Hero Section */}
-        <section className="container-fluid py-5 text-white" style={{ minHeight: '90vh', display: 'flex', alignItems: 'center' }}>
-          <div className="container text-center">
-            <div className="row justify-content-center">
-              <div className="col-lg-8">
-                <h1 className="display-3 fw-bold mb-4 animate__animated animate__fadeInUp">
-                  Welcome to My Portfolio
-                </h1>
-                <p className="lead mb-4 fs-4">
-                  I'm <span className="text-warning fw-bold">Vardhan Rangineni</span>, a passionate Java Full Stack Developer
-                </p>
-                <p className="fs-5 mb-4 text-light">
-                  Building innovative solutions with modern technologies
-                </p>
-                <button 
-                  className="btn btn-lg me-3 mb-3"
-                  style={{
-                    backgroundColor: 'rgba(135, 30, 226, 0.9)',
-                    color: '#fff',
-                    border: 'none',
-                    borderRadius: '50px',
-                    padding: '15px 40px',
-                    fontWeight: 'bold',
-                    transition: 'all 0.3s ease'
-                  }}
-                  onClick={() => scrollToSection(projectsRef)}
-                  onMouseOver={(e) => e.target.style.transform = 'translateY(-2px)'}
-                  onMouseOut={(e) => e.target.style.transform = 'translateY(0)'}
-                >
-                  View My Work
-                </button>
-                <button 
-                  className="btn btn-outline-light btn-lg mb-3"
-                  style={{
-                    borderRadius: '50px',
-                    padding: '15px 40px',
-                    fontWeight: 'bold',
-                    transition: 'all 0.3s ease'
-                  }}
-                  onClick={() => scrollToSection(contactRef)}
-                  onMouseOver={(e) => e.target.style.backgroundColor = 'rgba(255, 255, 255, 0.1)'}
-                  onMouseOut={(e) => e.target.style.backgroundColor = 'transparent'}
-                >
-                  Get In Touch
-                </button>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* About Section */}
-        <section ref={aboutRef} className="container py-5">
-          <div className="row align-items-center g-4">
-            <div className="col-lg-6 text-center">
-              <div className="position-relative d-inline-block">
-                <img
-                  src={process.env.PUBLIC_URL + "/Images/WhatsApp Image 2025-07-23 at 5.46.57 PM.jpeg"}
-                  alt="Vardhan Rangineni"
-                  className="img-fluid"
-                  style={{
-                    width: '100%',
-                    maxWidth: '350px',
-                    height: '350px',
-                    objectFit: 'cover',
-                    borderRadius: '20px',
-                    border: '4px solid rgba(255, 255, 255, 0.3)',
-                    boxShadow: '0 20px 40px rgba(0, 0, 0, 0.3)',
-                    transition: 'transform 0.3s ease'
-                  }}
-                  onMouseOver={(e) => e.target.style.transform = 'scale(1.05)'}
-                  onMouseOut={(e) => e.target.style.transform = 'scale(1)'}
-                />
-              </div>
-            </div>
-            
-            <div className="col-lg-6">
-              <div className="text-white p-4">
-                <h2 className="display-5 fw-bold mb-4 text-warning">About Me</h2>
-                <div className="fs-5 leading-relaxed">
-                  <p className="mb-4">
-                    Welcome to my portfolio! I'm <strong>Vardhan Rangineni</strong>, an IT graduate from the 2025 batch with a deep passion for coding and problem-solving.
-                  </p>
-                  <p className="mb-4">
-                    Currently working as a <span className="text-info fw-bold">Java Full Stack Developer</span>, I specialize in:
-                  </p>
-                  <ul className="list-unstyled mb-4">
-                    <li className="mb-2">✨ Spring Framework & Spring Boot</li>
-                    <li className="mb-2">⚛️ React & Modern Frontend</li>
-                    <li className="mb-2">☕ Core Java & Advanced Java</li>
-                    <li className="mb-2">🐍 Python Development</li>
-                  </ul>
-                  <p>
-                    I'm passionate about creating efficient, scalable solutions and always eager to learn new technologies that push the boundaries of innovation.
-                  </p>
+          <section className="container-fluid py-5 text-white" style={{ minHeight: '90vh', display: 'flex', alignItems: 'center' }}>
+            <div className="container text-center">
+              <div className="row justify-content-center">
+                <div className="col-lg-8">
+            <h1 className="display-3 fw-bold mb-4 animate__animated animate__fadeInUp">
+              Welcome to My Portfolio
+            </h1>
+            <p className="lead mb-4 fs-4">
+              I'm <span className="text-warning fw-bold">Vardhan Rangineni</span>, a passionate Java Full Stack Developer
+            </p>
+            <p className="fs-5 mb-4 text-light">
+              Building innovative solutions with modern technologies
+            </p>
+            <button 
+              className="btn btn-lg me-3 mb-3"
+              style={{
+                backgroundColor: 'rgba(135, 30, 226, 0.9)',
+                color: '#fff',
+                border: 'none',
+                borderRadius: '50px',
+                padding: '15px 40px',
+                fontWeight: 'bold',
+                transition: 'all 0.3s ease'
+              }}
+              onClick={() => scrollToSection(projectsRef)}
+              onMouseOver={(e) => e.target.style.transform = 'translateY(-2px)'}
+              onMouseOut={(e) => e.target.style.transform = 'translateY(0)'}
+            >
+              View My Work
+            </button>
+            <button 
+              className="btn btn-outline-light btn-lg mb-3"
+              style={{
+                borderRadius: '50px',
+                padding: '15px 40px',
+                fontWeight: 'bold',
+                transition: 'all 0.3s ease'
+              }}
+              onClick={() => scrollToSection(contactRef)}
+              onMouseOver={(e) => e.target.style.backgroundColor = 'rgba(255, 255, 255, 0.1)'}
+              onMouseOut={(e) => e.target.style.backgroundColor = 'transparent'}
+            >
+              Get In Touch
+            </button>
                 </div>
               </div>
             </div>
-          </div>
-        </section>
+          </section>
 
-        {/* Projects Section */}
-        <section ref={projectsRef} className="container py-5">
-          <div className="text-center mb-5">
-            <h2 className="display-4 fw-bold text-white mb-3">My Projects</h2>
-            <p className="fs-5 text-light">Showcasing my technical expertise and creativity</p>
-          </div>
-          
-          <div className="row g-4">
-            {projects.map((project, index) => (
-              <div key={index} className="col-lg-4 col-md-6">
-                <div 
-                  className="h-100 text-white p-4"
+          {/* About Section */}
+            <section ref={aboutRef} className="container py-5">
+              <div className="row align-items-center g-4">
+                <div className="col-lg-6 text-center">
+            <div className="position-relative d-inline-block">
+              <img
+                src={process.env.PUBLIC_URL + "/Images/WhatsApp Image 2025-07-23 at 5.46.57 PM.jpeg"}
+                alt="Vardhan Rangineni"
+                className="img-fluid"
+                style={{
+            width: '100%',
+            maxWidth: '500px',
+            height: '500px',
+            objectFit: 'cover',
+            borderRadius: '20px',
+            border: '4px solid rgba(255, 255, 255, 0.3)',
+            boxShadow: '0 20px 40px rgba(0, 0, 0, 0.3)',
+            transition: 'transform 0.3s ease'
+                }}
+                onMouseOver={(e) => e.target.style.transform = 'scale(1.05)'}
+                onMouseOut={(e) => e.target.style.transform = 'scale(1)'}
+              />
+            </div>
+                </div>
+                
+                <div className="col-lg-6">
+            <div className="text-white p-4">
+              <h2 className="display-5 fw-bold mb-4 text-warning">About Me</h2>
+              <div className="fs-5 leading-relaxed">
+                <p className="mb-4">
+            Welcome to my portfolio! I'm <strong>Vardhan Rangineni</strong>, an IT graduate from the 2025 batch with a deep passion for coding and problem-solving.
+                </p>
+                <p className="mb-4">
+            Currently working as a <span className="text-info fw-bold">Java Full Stack Developer</span>, I specialize in:
+                </p>
+                <ul className="list-unstyled mb-4">
+            <li className="mb-2">• Spring Framework & Spring Boot</li>
+            <li className="mb-2">• React & Modern Frontend Development</li>
+            <li className="mb-2">• Core Java & Advanced Java</li>
+            <li className="mb-2">• Python Development</li>
+                </ul>
+                <p>
+            I'm passionate about creating efficient, scalable solutions and always eager to learn new technologies that push the boundaries of innovation.
+                </p>
+              </div>
+            </div>
+                </div>
+              </div>
+            </section>
+
+            {/* Projects Section */}
+          <section ref={projectsRef} className="container py-5">
+            <div className="text-center mb-5">
+              <h2 className="display-4 fw-bold text-white mb-3">My Projects</h2>
+              <p className="fs-5 text-light">Showcasing my technical expertise and creativity</p>
+            </div>
+            
+            <div className="row g-4">
+              {projects.map((project, index) => (
+                <div key={index} className="col-lg-4 col-md-6">
+            <div 
+              className="h-100 text-white p-4"
+              style={{
+                backgroundColor: 'rgba(255, 255, 255, 0.1)',
+                borderRadius: '20px',
+                border: '2px solid rgba(255, 255, 255, 0.2)',
+                boxShadow: '0 15px 35px rgba(0, 0, 0, 0.3)',
+                backdropFilter: 'blur(15px)',
+                transition: 'all 0.3s ease',
+                cursor: 'pointer'
+              }}
+              onMouseOver={(e) => {
+                e.currentTarget.style.transform = 'translateY(-10px)';
+                e.currentTarget.style.boxShadow = '0 25px 50px rgba(0, 0, 0, 0.4)';
+              }}
+              onMouseOut={(e) => {
+                e.currentTarget.style.transform = 'translateY(0)';
+                e.currentTarget.style.boxShadow = '0 15px 35px rgba(0, 0, 0, 0.3)';
+                }}
+              >
+                <div className="d-flex justify-content-between align-items-center mb-3">
+                <h4 className="mb-0 fw-bold">{project.title}</h4>
+                <span className="badge" style={{ backgroundColor: 'rgba(135, 30, 226, 0.8)' }}>
+                  {project.type}
+                </span>
+                </div>
+                <p className="mb-4 text-light" style={{ lineHeight: '1.6' }}>
+                {project.description}
+                </p>
+                <div className="mb-3">
+                {project.technologies.map((tech, techIndex) => (
+                  <span 
+                key={techIndex}
+                className="me-2 mb-2 d-inline-block"
+                style={{
+                backgroundColor: 'rgba(135, 30, 226, 0.8)',
+                padding: '6px 12px',
+                borderRadius: '15px',
+                fontSize: '0.85rem',
+                fontWeight: '500'
+                }}
+                  >
+                {tech}
+                  </span>
+                ))}
+                </div>
+              </div>
+                </div>
+                ))}
+              </div>
+              </section>
+
+              {/* Contact Section */}
+            <footer ref={contactRef} className="container py-5">
+              <div 
+              className="text-white p-4 p-md-5"
+              style={{
+                backgroundColor: 'rgba(255, 255, 255, 0.1)',
+                borderRadius: '25px',
+                border: '2px solid rgba(255, 255, 255, 0.2)',
+                boxShadow: '0 20px 40px rgba(0, 0, 0, 0.3)',
+                backdropFilter: 'blur(15px)'
+              }}
+              >
+              <div className="text-center mb-5">
+                <h2 className="display-5 fw-bold mb-3 text-warning">Let's Connect</h2>
+                <p className="fs-5 mb-0 text-light">Ready to build something amazing together!</p>
+              </div>
+              
+              <div className="row g-4 mb-5">
+                {contactInfo.map((contact, index) => (
+                <div key={index} className="col-lg-4 col-md-6 text-center">
+                  <div 
+                  className="p-4 h-100"
                   style={{
-                    backgroundColor: 'rgba(255, 255, 255, 0.1)',
-                    borderRadius: '20px',
-                    border: '2px solid rgba(255, 255, 255, 0.2)',
-                    boxShadow: '0 15px 35px rgba(0, 0, 0, 0.3)',
-                    backdropFilter: 'blur(15px)',
+                    backgroundColor: 'rgba(255, 255, 255, 0.05)',
+                    borderRadius: '15px',
                     transition: 'all 0.3s ease',
                     cursor: 'pointer'
                   }}
+                  onClick={contact.action}
                   onMouseOver={(e) => {
-                    e.target.style.transform = 'translateY(-10px)';
-                    e.target.style.boxShadow = '0 25px 50px rgba(0, 0, 0, 0.4)';
+                    e.currentTarget.style.backgroundColor = 'rgba(255, 255, 255, 0.1)';
+                    e.currentTarget.style.transform = 'translateY(-5px)';
                   }}
                   onMouseOut={(e) => {
-                    e.target.style.transform = 'translateY(0)';
-                    e.target.style.boxShadow = '0 15px 35px rgba(0, 0, 0, 0.3)';
+                    e.currentTarget.style.backgroundColor = 'rgba(255, 255, 255, 0.05)';
+                    e.currentTarget.style.transform = 'translateY(0)';
                   }}
-                >
-                  <div className="d-flex justify-content-between align-items-center mb-3">
-                    <h4 className="mb-0 fw-bold">{project.title}</h4>
-                    <span className="badge" style={{ backgroundColor: 'rgba(135, 30, 226, 0.8)' }}>
-                      {project.type}
-                    </span>
-                  </div>
-                  <p className="mb-4 text-light" style={{ lineHeight: '1.6' }}>
-                    {project.description}
-                  </p>
-                  <div className="mb-3">
-                    {project.technologies.map((tech, techIndex) => (
-                      <span 
-                        key={techIndex}
-                        className="me-2 mb-2 d-inline-block"
-                        style={{
-                          backgroundColor: 'rgba(135, 30, 226, 0.8)',
-                          padding: '6px 12px',
-                          borderRadius: '15px',
-                          fontSize: '0.85rem',
-                          fontWeight: '500'
-                        }}
-                      >
-                        {tech}
-                      </span>
-                    ))}
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </section>
-
-        {/* Contact Section */}
-        <footer ref={contactRef} className="container py-5">
-          <div 
-            className="text-white p-4 p-md-5"
-            style={{
-              backgroundColor: 'rgba(255, 255, 255, 0.1)',
-              borderRadius: '25px',
-              border: '2px solid rgba(255, 255, 255, 0.2)',
-              boxShadow: '0 20px 40px rgba(0, 0, 0, 0.3)',
-              backdropFilter: 'blur(15px)'
-            }}
-          >
-            <div className="text-center mb-5">
-              <h2 className="display-5 fw-bold mb-3 text-warning">Let's Connect</h2>
-              <p className="fs-5 mb-0 text-light">Ready to build something amazing together!</p>
-            </div>
-            
-            <div className="row g-4 mb-5">
-              {contactInfo.map((contact, index) => (
-                <div key={index} className="col-lg-4 col-md-6 text-center">
-                  <div 
-                    className="p-4 h-100"
-                    style={{
-                      backgroundColor: 'rgba(255, 255, 255, 0.05)',
-                      borderRadius: '15px',
-                      transition: 'all 0.3s ease',
-                      cursor: 'pointer'
-                    }}
-                    onClick={contact.action}
-                    onMouseOver={(e) => {
-                      e.target.style.backgroundColor = 'rgba(255, 255, 255, 0.1)';
-                      e.target.style.transform = 'translateY(-5px)';
-                    }}
-                    onMouseOut={(e) => {
-                      e.target.style.backgroundColor = 'rgba(255, 255, 255, 0.05)';
-                      e.target.style.transform = 'translateY(0)';
-                    }}
                   >
-                    <div className="mb-3">
-                      <div style={{
-                        width: '70px',
-                        height: '70px',
-                        backgroundColor: 'rgba(135, 30, 226, 0.8)',
-                        borderRadius: '50%',
-                        display: 'inline-flex',
-                        alignItems: 'center',
-                        justifyContent: 'center',
-                        fontSize: '28px'
-                      }}>
-                        {contact.icon}
-                      </div>
+                  <div className="mb-3">
+                    <div style={{
+                    width: '70px',
+                    height: '70px',
+                    backgroundColor: 'rgba(135, 30, 226, 0.8)',
+                    borderRadius: '50%',
+                    display: 'inline-flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    fontSize: '28px'
+                    }}>
+                    {contact.icon}
                     </div>
-                    <h5 className="fw-bold mb-2">{contact.title}</h5>
-                    <p className="mb-0 text-break" style={{ fontSize: '0.95rem' }}>
-                      {contact.displayValue}
-                    </p>
+                  </div>
+                  <h5 className="fw-bold mb-2">{contact.title}</h5>
+                  <p className="mb-0 text-break" style={{ fontSize: '0.95rem' }}>
+                    {contact.displayValue}
+                  </p>
                   </div>
                 </div>
-              ))}
-  </div>
-  
-  <div className="text-center">
-              <div className="d-flex flex-column flex-sm-row justify-content-center gap-3">
-                <button 
+                ))}
+          </div>
+          
+          <div className="text-center">
+                <div className="d-flex flex-column flex-sm-row justify-content-center gap-3">
+                {/* <button 
                   className="btn btn-lg"
                   style={{
-                    backgroundColor: 'rgba(135, 30, 226, 0.9)',
-                    color: '#fff',
-                    border: 'none',
-                    borderRadius: '50px',
-                    padding: '15px 35px',
-                    fontWeight: 'bold',
-                    transition: 'all 0.3s ease'
+                  backgroundColor: 'rgba(135, 30, 226, 0.9)',
+                  color: '#fff',
+                  border: 'none',
+                  borderRadius: '50px',
+                  padding: '15px 35px',
+                  fontWeight: 'bold',
+                  transition: 'all 0.3s ease'
                   }}
                   onClick={() => window.open('/resume.pdf', '_blank')}
                   onMouseOver={(e) => e.target.style.transform = 'translateY(-2px)'}
                   onMouseOut={(e) => e.target.style.transform = 'translateY(0)'}
                 >
                   📄 Download Resume
-                </button>
+                </button> */}
                 <button 
                   className="btn btn-outline-light btn-lg"
                   style={{
-                    borderRadius: '50px',
-                    padding: '15px 35px',
-                    fontWeight: 'bold',
-                    transition: 'all 0.3s ease'
+                  borderRadius: '50px',
+                  padding: '15px 35px',
+                  fontWeight: 'bold',
+                  transition: 'all 0.3s ease'
                   }}
                   onClick={() => window.open('https://github.com/VardhanRangineni', '_blank')}
                   onMouseOver={(e) => e.target.style.backgroundColor = 'rgba(255, 255, 255, 0.1)'}
@@ -545,12 +551,12 @@ function App() {
                 >
                   🐙 View GitHub
                 </button>
+                </div>
               </div>
-            </div>
-          </div>
-        </footer>
+              </div>
+            </footer>
 
-        {/* Copyright */}
+            {/* Copyright */}
         <div className="text-center py-4">
           <p className="text-light mb-0">
             © 2025 Vardhan Rangineni. All rights reserved.
