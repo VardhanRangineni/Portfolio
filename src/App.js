@@ -65,7 +65,7 @@ function App() {
       displayValue: '+91 9949592611'
     },
     {
-      icon: <img src={process.env.PUBLIC_URL + "/Images/317750_linkedin_icon.png"} alt="LinkedIn Icon" style={{ width: '90px', height: '70px' }} />,
+      icon: <img src={process.env.PUBLIC_URL + "/Images/1298749_linkedin_icon.png"} alt="LinkedIn Icon" style={{ width: '55px', height: '55px' }} />,
       title: 'LinkedIn',
       value: 'https://www.linkedin.com/in/vardhan-rangineni-8488921bb',
       action: () => window.open('https://www.linkedin.com/in/vardhan-rangineni-8488921bb', '_blank'),
