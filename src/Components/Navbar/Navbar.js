@@ -30,9 +30,14 @@ const Navbar = ({ isMenuOpen, setIsMenuOpen, scrollToAbout, scrollToProjects, sc
         <button className="navbar-brand d-flex align-items-center text-white border-0 bg-transparent" style={{ fontWeight: 'bold', fontSize: '1.5rem' }}>
           <img
             src={process.env.PUBLIC_URL + "/Images/6d6f81f5-3c4f-47e3-989a-bc9cfc42770b.png.png"}
-            alt="Vardhan Rangineni"
+            alt="Vardhan Rangineni Logo"
             style={{ height: '35px', marginRight: '10px' }}
           />
+            <img
+              src={process.env.PUBLIC_URL + "/Images/6d6f81f5-3c4f-47e3-989a-bc9cfc42770b.png.png"}
+              alt="Vardhan Rangineni Logo"
+              style={{ height: '35px', marginRight: '10px' }}
+            />
           <span className="text-warning"></span>
         </button>
         {/* Mobile Toggle Button */}

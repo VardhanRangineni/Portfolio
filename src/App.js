@@ -52,21 +52,24 @@ function App() {
   const contactInfo = [
     {
       icon: <img src={process.env.PUBLIC_URL + "/Images/7123031_mail_google_gmail_icon.png"} style={{ width: '65px', height: '65px' }} />,
-      title: 'Email',
+    title: 'Email',
+    alt: 'Email Icon',
       value: 'ranginenivardhan@gmail.com',
       action: () => window.open('mailto:ranginenivardhan@gmail.com'),
       displayValue: 'ranginenivardhan@gmail.com'
     },
     {
       icon: <img src={process.env.PUBLIC_URL + "/Images/10750658_telephone_phone_call_communication_message_icon.png"} style={{ width: '55px', height: '55px' }} />,
-      title: 'Phone',
+    title: 'Phone',
+    alt: 'Phone Icon',
       value: '+919949592611',
       action: () => window.open('tel:+919949592611'),
       displayValue: '+91 9949592611'
     },
     {
       icon: <img src={process.env.PUBLIC_URL + "/Images/317750_linkedin_icon.png"} style={{ width: '90px', height: '70px' }} />,
-      title: 'LinkedIn',
+    title: 'LinkedIn',
+    alt: 'LinkedIn Icon',
       value: 'https://www.linkedin.com/in/vardhan-rangineni-8488921bb',
       action: () => window.open('https://www.linkedin.com/in/vardhan-rangineni-8488921bb', '_blank'),
       displayValue: 'Connect on LinkedIn'
