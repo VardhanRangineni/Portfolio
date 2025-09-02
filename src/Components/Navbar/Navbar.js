@@ -31,7 +31,7 @@ const Navbar = ({ isMenuOpen, setIsMenuOpen, scrollToAbout, scrollToProjects, sc
           <img
             src={process.env.PUBLIC_URL + "/Images/6d6f81f5-3c4f-47e3-989a-bc9cfc42770b.png.png"}
             alt="Vardhan Rangineni"
-            style={{ height: '40px', marginRight: '10px' }}
+            style={{ height: '35px', marginRight: '10px' }}
           />
           <span className="text-warning"></span>
         </button>

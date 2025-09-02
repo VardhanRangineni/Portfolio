@@ -32,7 +32,7 @@ const About = React.forwardRef((props, ref) => (
               Welcome to my portfolio! I'm <strong>Vardhan Rangineni</strong>, an IT graduate from the 2025 batch with a deep passion for coding and problem-solving.
             </p>
             <p className="mb-4">
-              Currently working as a <span className="text-info fw-bold">Java Full Stack Developer</span>, I specialize in:
+              Currently working as a <span className="text-info fw-bold">Java Full Stack Developer</span>, I'm specialize in:
             </p>
             <ul className="list-unstyled mb-4">
               <li className="mb-2">• Spring Framework & Spring Boot</li>
