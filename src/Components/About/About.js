@@ -10,7 +10,7 @@ const About = React.forwardRef((props, ref) => (
             alt="Vardhan Rangineni"
             className="img-fluid"
             style={{
-              width: '100%',
+              width: '120%',
               maxWidth: '500px',
               height: '500px',
               objectFit: 'cover',
