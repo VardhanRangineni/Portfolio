@@ -33,7 +33,7 @@ const Navbar = ({ isMenuOpen, setIsMenuOpen, scrollToAbout, scrollToProjects, sc
             alt="Vardhan Rangineni"
             style={{ height: '40px', marginRight: '10px' }}
           />
-          <span className="text-warning">Vardhan</span>
+          <span className="text-warning"></span>
         </button>
         {/* Mobile Toggle Button */}
         <button
