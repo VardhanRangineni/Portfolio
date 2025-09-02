@@ -6,7 +6,7 @@ const About = React.forwardRef((props, ref) => (
       <div className="col-lg-6 text-center">
         <div className="position-relative d-inline-block">
           <img
-            src={process.env.PUBLIC_URL + "/Images/WhatsApp Image 2025-07-23 at 5.46.57 PM.jpeg"}
+            src={process.env.PUBLIC_URL + "/Images/Generated Image September 02, 2025 - 7_03PM.jpeg"}
             alt="Vardhan Rangineni"
             className="img-fluid"
             style={{
