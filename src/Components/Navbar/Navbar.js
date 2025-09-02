@@ -5,7 +5,7 @@ const Navbar = ({ isMenuOpen, setIsMenuOpen, scrollToAbout, scrollToProjects, sc
   <>
     {/* Background */}
     <div className="position-fixed top-0 start-0 w-100 h-100" style={{ zIndex: 0 }}>
-      <Silk speed={5} scale={1} color="#871ee2ff" noiseIntensity={0} rotation={0} />
+      <Silk speed={5} scale={1} color="#2e2c2cff" noiseIntensity={0} rotation={0} />
     </div>
     {/* Custom Navigation Bar */}
     <nav 
