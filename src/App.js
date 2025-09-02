@@ -16,7 +16,7 @@ function App() {
         />
       </div>
       <CardNav
-        logo={<img src={process.env.PUBLIC_URL + "/Images/ChatGPT_Image_Jul_23__2025__05_05_17_PM-removebg-preview (1).png"} />}
+        logo={process.env.PUBLIC_URL + "/Images/ChatGPT_Image_Jul_23__2025__05_05_17_PM-removebg-preview (1).png"}
         logoAlt="My Portfolio Logo"
         items={[
           {
