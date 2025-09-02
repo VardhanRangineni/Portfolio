@@ -11,13 +11,15 @@ const About = React.forwardRef((props, ref) => (
             className="img-fluid"
             style={{
               width: '120%',
+              alignSelf: 'center',
               maxWidth: '500px',
               height: '500px',
               objectFit: 'cover',
               borderRadius: '20px',
               border: '4px solid rgba(255, 255, 255, 0.3)',
               boxShadow: '0 20px 40px rgba(0, 0, 0, 0.3)',
-              transition: 'transform 0.3s ease'
+              transition: 'transform 0.3s ease',
+              marginLeft: '-10%'
             }}
             onMouseOver={e => e.target.style.transform = 'scale(1.05)'}
             onMouseOut={e => e.target.style.transform = 'scale(1)'}
