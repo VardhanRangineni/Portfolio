@@ -30,7 +30,7 @@ function App() {
             textColor: '#fff',
           },
           {
-            label: 'Contact',
+            label: 'Contact Info',
             bgColor: 'rgba(255, 255, 255, 0.1)',
             textColor: '#fff',
           }
@@ -43,7 +43,7 @@ function App() {
       />
       <div className="position-relative" style={{ zIndex: 1 }}>
         <div className="container py-5 text-white mt-5" style={{ textAlign: "center" }}>
-          <h1>Welcome to My Portfolio</h1>
+          <h1>Welcome</h1>
         </div>
         
         {/* About Section */}

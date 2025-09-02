@@ -157,6 +157,7 @@ const CardNav = ({
             type="button"
             className="card-nav-cta-button"
             style={{ backgroundColor: buttonBgColor, color: buttonTextColor }}
+            onClick={() => window.open('https://mail.google.com/mail/?view=cm&fs=1&to=ranginenivardhanvardhan@gmail.com', '_blank')}
           >
             Contact Me
           </button>
