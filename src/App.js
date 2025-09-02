@@ -51,21 +51,21 @@ function App() {
   // Contact information
   const contactInfo = [
     {
-      icon: '📧',
+      icon: <img src={process.env.PUBLIC_URL + "/Images/7123031_mail_google_gmail_icon.png"} style={{ width: '65px', height: '65px' }} />,
       title: 'Email',
       value: 'ranginenivardhan@gmail.com',
       action: () => window.open('mailto:ranginenivardhan@gmail.com'),
       displayValue: 'ranginenivardhan@gmail.com'
     },
     {
-      icon: '📱',
+      icon: <img src={process.env.PUBLIC_URL + "/Images/10750658_telephone_phone_call_communication_message_icon.png"} style={{ width: '55px', height: '55px' }} />,
       title: 'Phone',
       value: '+919949592611',
       action: () => window.open('tel:+919949592611'),
       displayValue: '+91 9949592611'
     },
     {
-      icon: '💼',
+      icon: <img src={process.env.PUBLIC_URL + "/Images/317750_linkedin_icon.png"} style={{ width: '90px', height: '70px' }} />,
       title: 'LinkedIn',
       value: 'https://www.linkedin.com/in/vardhan-rangineni-8488921bb',
       action: () => window.open('https://www.linkedin.com/in/vardhan-rangineni-8488921bb', '_blank'),

@@ -87,63 +87,63 @@ const Navbar = ({ isMenuOpen, setIsMenuOpen, scrollToAbout, scrollToProjects, sc
           </span>
         </button>
         {/* Navigation Links */}
-        <div className={`collapse navbar-collapse ${isMenuOpen ? 'show' : ''}`} id="navbarNav">
-          <ul className="navbar-nav ms-auto d-flex align-items-lg-center">
-            <li className="nav-item mx-2">
-              <button
-                className="nav-link btn btn-link text-white w-100 text-start text-lg-center"
-                style={{ 
-                  border: 'none', 
-                  background: 'none', 
-                  fontWeight: '500',
-                  padding: '10px 0'
-                }}
-                onClick={scrollToAbout}
-                onMouseOver={e => e.target.style.color = '#ffc107'}
-                onMouseOut={e => e.target.style.color = '#fff'}
-              >
-                About
-              </button>
-            </li>
-            <li className="nav-item mx-2">
-              <button
-                className="nav-link btn btn-link text-white w-100 text-start text-lg-center"
-                style={{ 
-                  border: 'none', 
-                  background: 'none', 
-                  fontWeight: '500',
-                  padding: '10px 0'
-                }}
-                onClick={scrollToProjects}
-                onMouseOver={e => e.target.style.color = '#ffc107'}
-                onMouseOut={e => e.target.style.color = '#fff'}
-              >
-                Projects
-              </button>
-            </li>
-            <li className="nav-item mx-2">
-              <button
-                className="nav-link btn btn-link text-white w-100 text-start text-lg-center"
-                style={{ 
-                  border: 'none', 
-                  background: 'none', 
-                  fontWeight: '500',
-                  padding: '10px 0'
-                }}
-                onClick={scrollToContact}
-                onMouseOver={e => e.target.style.color = '#ffc107'}
-                onMouseOut={e => e.target.style.color = '#fff'}
-              >
-                Contact
-              </button>
-            </li>
-            {/* Social Links */}
+          <div className={`collapse navbar-collapse ${isMenuOpen ? 'show' : ''}`} id="navbarNav">
+            <ul className="navbar-nav mx-auto d-flex align-items-lg-center">
+              <li className="nav-item mx-2">
+                <button
+            className="nav-link btn btn-link text-white w-100 text-center"
+            style={{ 
+              border: 'none', 
+              background: 'none', 
+              fontWeight: '500',
+              padding: '10px 0'
+            }}
+            onClick={scrollToAbout}
+            onMouseOver={e => e.target.style.color = '#ffc107'}
+            onMouseOut={e => e.target.style.color = '#fff'}
+                >
+            About
+                </button>
+              </li>
+              <li className="nav-item mx-2">
+                <button
+            className="nav-link btn btn-link text-white w-100 text-center"
+            style={{ 
+              border: 'none', 
+              background: 'none', 
+              fontWeight: '500',
+              padding: '10px 0'
+            }}
+            onClick={scrollToProjects}
+            onMouseOver={e => e.target.style.color = '#ffc107'}
+            onMouseOut={e => e.target.style.color = '#fff'}
+                >
+            Projects
+                </button>
+              </li>
+              <li className="nav-item mx-2">
+                <button
+            className="nav-link btn btn-link text-white w-100 text-center"
+            style={{ 
+              border: 'none', 
+              background: 'none', 
+              fontWeight: '500',
+              padding: '10px 0'
+            }}
+            onClick={scrollToContact}
+            onMouseOver={e => e.target.style.color = '#ffc107'}
+            onMouseOut={e => e.target.style.color = '#fff'}
+                >
+            Contact
+                </button>
+              </li>
+              {/* Social Links */}
             <li className="nav-item mx-2 d-flex justify-content-start justify-content-lg-center align-items-center">
               <a
                 href="https://www.linkedin.com/in/vardhan-rangineni-8488921bb"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="btn btn-outline-light btn-sm rounded-circle me-2"
+                className="btn btn-btn-sm rounded-circle me-2"
                 style={{ 
                   width: '40px', 
                   height: '40px', 
@@ -155,13 +155,13 @@ const Navbar = ({ isMenuOpen, setIsMenuOpen, scrollToAbout, scrollToProjects, sc
                 }}
                 title="LinkedIn"
               >
-                💼
+                <img src={process.env.PUBLIC_URL + "/Images/317750_linkedin_icon.png"} style={{ width: '40px', height: '40px' }} />
               </a>
               <a
                 href="https://github.com/VardhanRangineni"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="btn btn-outline-light btn-sm rounded-circle me-2"
+                className="btn btn-btn-sm rounded-circle me-2"
                 style={{ 
                   width: '40px', 
                   height: '40px', 
@@ -173,7 +173,7 @@ const Navbar = ({ isMenuOpen, setIsMenuOpen, scrollToAbout, scrollToProjects, sc
                 }}
                 title="GitHub"
               >
-                🐙
+                <img src={process.env.PUBLIC_URL + "/Images/1298743_github_git_logo_social_icon.png"} style={{ width: '40px', height: '40px' }} />
               </a>
             </li>
           </ul>

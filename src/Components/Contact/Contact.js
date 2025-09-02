@@ -41,7 +41,7 @@ const Contact = React.forwardRef(({ contactInfo }, ref) => (
                 <div style={{
                   width: '70px',
                   height: '70px',
-                  backgroundColor: 'rgba(135, 30, 226, 0.8)',
+                  //backgroundColor: 'rgba(135, 30, 226, 0.8)',
                   borderRadius: '50%',
                   display: 'inline-flex',
                   alignItems: 'center',
@@ -65,7 +65,7 @@ const Contact = React.forwardRef(({ contactInfo }, ref) => (
             className="btn btn-outline-light btn-lg"
             style={{
               borderRadius: '50px',
-              padding: '15px 35px',
+              padding: '12px 35px',
               fontWeight: 'bold',
               transition: 'all 0.3s ease'
             }}
@@ -73,7 +73,7 @@ const Contact = React.forwardRef(({ contactInfo }, ref) => (
             onMouseOver={e => e.target.style.backgroundColor = 'rgba(255, 255, 255, 0.1)'}
             onMouseOut={e => e.target.style.backgroundColor = 'transparent'}
           >
-            🐙 View GitHub
+              <img src={process.env.PUBLIC_URL + "/Images/1298743_github_git_logo_social_icon.png"} style={{ width: '40px', height: '40px' }} />  View GitHub
           </button>
         </div>
       </div>
