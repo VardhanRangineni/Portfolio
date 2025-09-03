@@ -1,7 +1,7 @@
 import React from 'react';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import Silk from '../Silk';
-import { scroll } from 'framer-motion/dom';
+
 
 const Navbar = ({ isMenuOpen, setIsMenuOpen, scrollToAbout, scrollToProjects, scrollToContact }) => (
   <>
