@@ -3,12 +3,12 @@ import React, { useState, useEffect } from 'react';
 
 const welcomeTexts = [
     'Welcome to My Portfolio',
-    'Bienvenue to My Portfolio',
     'स्वागत है to My Portfolio',
-    '欢迎 to My Portfolio',
-    'いらっしゃいませ to My Portfolio',
+    'Bienvenue to My Portfolio',
     'స్వాగతం to My Portfolio',
+    'いらっしゃいませ to My Portfolio',
     'ಸ್ವಾಗತ to My Portfolio',
+    '欢迎 to My Portfolio',
     'வரவேற்கிறேன் to My Portfolio',
     'സ്വാഗതം to My Portfolio'
 ];
