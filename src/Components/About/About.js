@@ -31,19 +31,19 @@ const About = React.forwardRef((props, ref) => (
           <h2 className="display-5 fw-bold mb-4 text-warning">About Me</h2>
           <div className="fs-5 leading-relaxed">
             <p className="mb-4">
-              Welcome to my portfolio! I'm <strong>Vardhan Rangineni</strong>, an IT graduate from the 2025 batch with a deep passion for coding and problem-solving.
+              Welcome to my portfolio! I'm <strong>Vardhan Rangineni</strong>, an Information Technology graduate (Batch of 2025) with a strong passion for coding, problem-solving, and building impactful digital solutions.
             </p>
             <p className="mb-4">
-              Currently working as a <span className="text-info fw-bold">Java Full Stack Developer</span>, I'm specialize in:
+              I am currently working as a <span className="text-info fw-bold">Java Full Stack Developer</span>, with expertise in:
             </p>
             <ul className="list-unstyled mb-4">
               <li className="mb-2">• Spring Framework & Spring Boot</li>
               <li className="mb-2">• React & Modern Frontend Development</li>
-              <li className="mb-2">• Core Java & Advanced Java</li>
+              <li className="mb-2">• Core & Advanced Java</li>
               <li className="mb-2">• Python Development</li>
             </ul>
             <p>
-              I'm passionate about creating efficient, scalable solutions and always eager to learn new technologies that push the boundaries of innovation.
+              I thrive on developing efficient, scalable, and user-focused applications while continuously learning and adapting to emerging technologies. My goal is to contribute to innovative projects that make a real difference.
             </p>
           </div>
         </div>
