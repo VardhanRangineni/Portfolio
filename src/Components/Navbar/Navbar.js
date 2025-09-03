@@ -1,6 +1,7 @@
 import React from 'react';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import Silk from '../Silk';
+import { scroll } from 'framer-motion/dom';
 
 const Navbar = ({ isMenuOpen, setIsMenuOpen, scrollToAbout, scrollToProjects, scrollToContact }) => (
   <>
@@ -28,15 +29,19 @@ const Navbar = ({ isMenuOpen, setIsMenuOpen, scrollToAbout, scrollToProjects, sc
     >
       <div className="container-fluid d-flex align-items-center justify-content-between">
         {/* Logo/Brand */}
-        <button className="navbar-brand d-flex align-items-center text-white border-0 bg-transparent" style={{ fontWeight: 'bold', fontSize: '1.5rem' }}>
-          <img
-            src={process.env.PUBLIC_URL + "/Images/6d6f81f5-3c4f-47e3-989a-bc9cfc42770b.png.png"}
-            alt="Vardhan Rangineni Logo"
-            style={{ height: '35px', marginRight: '10px' }}
-          />
-          <span className="text-warning"></span>
-        </button>
-        {/* Mobile Toggle Button */}
+          <button 
+            className="navbar-brand d-flex align-items-center text-white border-0 bg-transparent" 
+            style={{ fontWeight: 'bold', fontSize: '1.5rem' }}
+            onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+          >
+            <img
+              src={process.env.PUBLIC_URL + "/Images/6d6f81f5-3c4f-47e3-989a-bc9cfc42770b.png.png"}
+              alt="Vardhan Rangineni Logo"
+              style={{ height: '35px', marginRight: '10px' }}
+            />
+            <span className="text-warning"></span>
+          </button>
+          {/* Mobile Toggle Button */}
         <button
           className="navbar-toggler border-0 p-2"
           type="button"
