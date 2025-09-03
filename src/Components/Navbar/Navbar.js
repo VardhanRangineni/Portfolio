@@ -1,4 +1,5 @@
 import React from 'react';
+import 'bootstrap-icons/font/bootstrap-icons.css';
 import Silk from '../Silk';
 
 const Navbar = ({ isMenuOpen, setIsMenuOpen, scrollToAbout, scrollToProjects, scrollToContact }) => (
@@ -96,11 +97,13 @@ const Navbar = ({ isMenuOpen, setIsMenuOpen, scrollToAbout, scrollToProjects, sc
               border: 'none', 
               background: 'none', 
               fontWeight: '500',
-              padding: '10px 0'
+              padding: '10px 0',
+              transition: 'color 0.3s ease',
+              color: '#fff'
             }}
             onClick={scrollToAbout}
-            onMouseOver={e => e.target.style.color = '#ffc107'}
-            onMouseOut={e => e.target.style.color = '#fff'}
+            onMouseEnter={e => e.target.style.setProperty('color', '#ffc107', 'important')}
+            onMouseLeave={e => e.target.style.setProperty('color', '#fff', 'important')}
                 >
             About
                 </button>
@@ -112,11 +115,13 @@ const Navbar = ({ isMenuOpen, setIsMenuOpen, scrollToAbout, scrollToProjects, sc
               border: 'none', 
               background: 'none', 
               fontWeight: '500',
-              padding: '10px 0'
+              padding: '10px 0',
+              transition: 'color 0.3s ease',
+              color: '#fff'
             }}
             onClick={scrollToProjects}
-            onMouseOver={e => e.target.style.color = '#ffc107'}
-            onMouseOut={e => e.target.style.color = '#fff'}
+            onMouseEnter={e => e.target.style.setProperty('color', '#ffc107', 'important')}
+            onMouseLeave={e => e.target.style.setProperty('color', '#fff', 'important')}
                 >
             Projects
                 </button>
@@ -128,14 +133,44 @@ const Navbar = ({ isMenuOpen, setIsMenuOpen, scrollToAbout, scrollToProjects, sc
               border: 'none', 
               background: 'none', 
               fontWeight: '500',
-              padding: '10px 0'
+              padding: '10px 0',
+              transition: 'color 0.3s ease',
+              color: '#fff'
             }}
             onClick={scrollToContact}
-            onMouseOver={e => e.target.style.color = '#ffc107'}
-            onMouseOut={e => e.target.style.color = '#fff'}
+            onMouseEnter={e => e.target.style.setProperty('color', '#ffc107', 'important')}
+            onMouseLeave={e => e.target.style.setProperty('color', '#fff', 'important')}
                 >
             Contact
                 </button>
+              </li>
+              <li className="nav-item mx-2">
+                <a
+                  href={process.env.PUBLIC_URL + "/Rangineni Vardhan.pdf"}
+                  download="Vardhan_Rangineni_Resume.pdf"
+                  className="nav-link btn btn-link text-white w-100 text-center"
+                  style={{ 
+                    border: 'none', 
+                    background: 'none', 
+                    fontWeight: '500',
+                    padding: '10px 0',
+                    transition: 'all 0.3s ease',
+                    color: '#fff',
+                    textDecoration: 'none'
+                  }}
+                  onMouseEnter={e => {
+                    e.target.style.setProperty('color', '#ffc107', 'important');
+                    const icon = e.target.querySelector('i');
+                    if (icon) icon.style.setProperty('color', '#ffc107', 'important');
+                  }}
+                  onMouseLeave={e => {
+                    e.target.style.setProperty('color', '#fff', 'important');
+                    const icon = e.target.querySelector('i');
+                    if (icon) icon.style.setProperty('color', '#fff', 'important');
+                  }}
+                >
+                 <i className="bi bi-download ms-1" style={{ transition: 'all 0.3s ease' }}></i> Resume
+                </a>
               </li>
           </ul>
         </div>
