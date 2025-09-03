@@ -78,7 +78,7 @@ const Contact = React.forwardRef(({ contactInfo }, ref) => (
         </div>
       </div>
     </div>
-    <div className="text-center py-4">
+    <div className="text-center py-4 mt-4">
       <p className="text-light mb-0">
         © 2025 Vardhan Rangineni. All rights reserved.
       </p>

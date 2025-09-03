@@ -1,22 +1,53 @@
+
 import React, { useState, useEffect } from 'react';
+
+const welcomeTexts = [
+    'Welcome to My Portfolio',
+    'Bienvenue to My Portfolio',
+    'स्वागत है to My Portfolio',
+    '欢迎 to My Portfolio',
+    'いらっしゃいませ to My Portfolio',
+    'స్వాగతం to My Portfolio',
+    'ಸ್ವಾಗತ to My Portfolio',
+    'வரவேற்கிறேன் to My Portfolio',
+    'സ്വാഗതം to My Portfolio'
+];
 
 const Hero = ({ scrollToProjects, scrollToContact }) => {
     const [displayText, setDisplayText] = useState('');
-    const fullText = 'Welcome to My Portfolio';
-    
+    const [currentLanguageIndex, setCurrentLanguageIndex] = useState(0);
+
     useEffect(() => {
         let index = 0;
-        const timer = setInterval(() => {
-            if (index <= fullText.length) {
-                setDisplayText(fullText.slice(0, index));
+        const currentText = welcomeTexts[currentLanguageIndex];
+
+        // Typing effect
+        const typeTimer = setInterval(() => {
+            if (index <= currentText.length) {
+                setDisplayText(currentText.slice(0, index));
                 index++;
             } else {
-                clearInterval(timer);
+                clearInterval(typeTimer);
+
+                // Wait 2 seconds, then start erasing
+                setTimeout(() => {
+                    let eraseIndex = currentText.length;
+                    const eraseTimer = setInterval(() => {
+                        if (eraseIndex >= 0) {
+                            setDisplayText(currentText.slice(0, eraseIndex));
+                            eraseIndex--;
+                        } else {
+                            clearInterval(eraseTimer);
+                            // Move to next language
+                            setCurrentLanguageIndex((prev) => (prev + 1) % welcomeTexts.length);
+                        }
+                    }, 100);
+                }, 2000);
             }
-        }, 100); // Adjust speed by changing this value
-        
-        return () => clearInterval(timer);
-    }, []);
+        }, 100);
+
+        return () => clearInterval(typeTimer);
+    }, [currentLanguageIndex]);
 
     return (
         <section className="container-fluid py-5 text-white" style={{ minHeight: '90vh', display: 'flex', alignItems: 'center' }}>
